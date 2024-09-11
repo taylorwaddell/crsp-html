@@ -1,0 +1,1182 @@
+<!DOCTYPE html>
+<html lang="en" class="bg-gray-50">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Christian Resource Starter Pack</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+      details summary::-webkit-details-marker,
+      details summary::marker {
+        display: none;
+        content: "";
+      }
+      .tooltip {
+        visibility: hidden;
+        opacity: 0;
+        transition: opacity 0.3s;
+      }
+      .tooltip.show {
+        visibility: visible;
+        opacity: 1;
+      }
+    </style>
+  </head>
+  <body class="font-sans text-gray-800 leading-normal">
+    <div class="max-w-3xl mx-auto p-6 pb-20">
+      <header class="mb-8">
+        <h1 class="text-4xl font-bold mb-4">Christian Resource Starter Pack</h1>
+      </header>
+
+      <!-- Welcome Banner -->
+      <div
+        id="welcome-banner"
+        class="bg-yellow-50 border-l-4 border-yellow-400 p-4 mb-6 flex flex-col gap-4"
+      >
+        <div class="flex items-center justify-between">
+          <h3 class="text-xl">Welcome!</h3>
+          <button
+            type="button"
+            class="text-gray-500 hover:text-gray-700"
+            id="close-banner"
+            aria-label="Close"
+          >
+            <svg
+              class="w-5 h-5"
+              fill="none"
+              stroke="currentColor"
+              viewBox="0 0 24 24"
+              xmlns="http://www.w3.org/2000/svg"
+              aria-hidden="true"
+            >
+              <path
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                stroke-width="2"
+                d="M6 18L18 6M6 6l12 12"
+              ></path>
+            </svg>
+          </button>
+        </div>
+        <p class="text-lg">
+          Below are toggle sections that contain resources according to their
+          media type. Most things are self-explanatory but there are "how to
+          use" sections as well as basic descriptions of nearly everything
+          within this site. Have fun!
+        </p>
+      </div>
+
+      <!-- Finding a Church -->
+      <details
+        id="finding-a-church"
+        class="mb-4 border-b border-gray-200 group"
+      >
+        <summary
+          class="text-xl font-semibold py-4 cursor-pointer flex items-center justify-between hover:bg-gray-100 px-2 rounded"
+        >
+          <h2 id="FindingAChurch" class="inline-flex items-center">
+            <span class="mr-2">⛪</span>
+            <span>Finding a Church</span>
+          </h2>
+          <div class="flex items-center">
+            <button
+              class="share-btn mr-2 p-1 hover:bg-gray-200 rounded"
+              data-section="FindingAChurch"
+            >
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="currentColor"
+                stroke-width="2"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                class="w-5 h-5"
+              >
+                <path d="M4 12v8a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2v-8" />
+                <polyline points="16 6 12 2 8 6" />
+                <line x1="12" y1="2" x2="12" y2="15" />
+              </svg>
+            </button>
+            <svg
+              class="w-5 h-5 transform group-open:rotate-180"
+              fill="none"
+              stroke="currentColor"
+              viewBox="0 0 24 24"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                stroke-width="2"
+                d="M19 9l-7 7-7-7"
+              ></path>
+            </svg>
+          </div>
+        </summary>
+        <div class="py-4 pl-6">
+          <ul class="list-disc pl-5 space-y-2">
+            <li>
+              The book
+              <a
+                href="https://www.amazon.com/Nine-Marks-Healthy-Church-9Marks/dp/1433578115/ref=tmm_hrd_swatch_0?_encoding=UTF8&qid=1698068858&sr=8-1"
+                class="text-blue-600 hover:underline"
+                >Nine Marks by Mark Dever</a
+              >
+              is a great read to learn about the purpose and intention of the
+              church.
+              <a
+                href="https://www.9marks.org/"
+                class="text-blue-600 hover:underline"
+                >Their website</a
+              >
+              also offers a
+              <a
+                href="https://www.9marks.org/about/the-nine-marks/"
+                class="text-blue-600 hover:underline"
+                >general breakdown of the points</a
+              >
+              gone over in the book and also has a
+              <a
+                href="https://www.9marks.org/church-search/"
+                class="text-blue-600 hover:underline"
+                >feature to find churches</a
+              >
+              near you that are associated with nine marks.
+            </li>
+          </ul>
+          <p class="font-semibold mt-4 mb-2">Resources on the topic:</p>
+          <ul class="list-disc pl-5 space-y-2">
+            <li>
+              <a
+                href="https://www.youtube.com/watch?v=pAVytaW3Zlc&pp=ygUYam9obiBwaXBlciBmaW5kIGEgY2h1cmNo"
+                class="text-blue-600 hover:underline"
+                >How Do I Find a Good Church? by Desiring God</a
+              >
+            </li>
+            <li>
+              <a
+                href="https://www.youtube.com/watch?v=p5lTPXjdbO8&pp=ygUXZmluZCBhIGNodXJjaCBtYWNhcnRodXI%3D"
+                class="text-blue-600 hover:underline"
+                >How to Find a Healthy Church - John MacArthur</a
+              >
+            </li>
+          </ul>
+        </div>
+      </details>
+
+      <!-- Websites -->
+      <details id="websites" class="mb-4 border-b border-gray-200 group">
+        <summary
+          class="text-xl font-semibold py-4 cursor-pointer flex items-center justify-between hover:bg-gray-100 px-2 rounded"
+        >
+          <h2 id="Websites" class="inline-flex items-center">
+            <span class="mr-2">💻</span>
+            <span>Websites</span>
+          </h2>
+          <div class="flex items-center">
+            <button
+              class="share-btn mr-2 p-1 hover:bg-gray-200 rounded"
+              data-section="Websites"
+            >
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="currentColor"
+                stroke-width="2"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                class="w-5 h-5"
+              >
+                <path d="M4 12v8a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2v-8" />
+                <polyline points="16 6 12 2 8 6" />
+                <line x1="12" y1="2" x2="12" y2="15" />
+              </svg>
+            </button>
+            <svg
+              class="w-5 h-5 transform group-open:rotate-180"
+              fill="none"
+              stroke="currentColor"
+              viewBox="0 0 24 24"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                stroke-width="2"
+                d="M19 9l-7 7-7-7"
+              ></path>
+            </svg>
+          </div>
+        </summary>
+        <div class="py-4 pl-6">
+          <h3 class="text-lg font-semibold mb-2">Bible Hub</h3>
+          <p class="mb-2">
+            Bible Hub features topical, Greek and Hebrew study tools, plus
+            concordances, commentaries, dictionaries, sermons and devotionals.
+          </p>
+          <p class="font-semibold mb-2">How to use:</p>
+          <ul class="list-disc pl-5 space-y-2">
+            <li>
+              Search words, verses, passages, books, people, nearly anything in
+              the search bar. BibleHub will respond with everything it has on
+              what you searched.
+            </li>
+          </ul>
+          <img
+            src="Christian%20Resource%20Starter%20Pack%20af9ccca8e9ee4b96933ab4f10d6c5c09/biblehub-diagram.png"
+            alt="Bible Hub Diagram"
+            class="mt-4 max-w-full h-auto"
+          />
+
+          <h3 class="text-lg font-semibold mt-6 mb-2">Biblical Training</h3>
+          <p>
+            BiblicalTraining is a team of premiere professors, pastors, and
+            authors who have come together to provide high-quality biblical
+            teaching for Christians worldwide, and it's free.
+          </p>
+        </div>
+      </details>
+
+      <!-- YouTube -->
+      <details id="youtube" class="mb-4 border-b border-gray-200 group">
+        <summary
+          class="text-xl font-semibold py-4 cursor-pointer flex items-center justify-between hover:bg-gray-100 px-2 rounded"
+        >
+          <h2 id="YouTube" class="inline-flex items-center">
+            <span class="mr-2">📺</span>
+            <span>YouTube</span>
+          </h2>
+          <div class="flex items-center">
+            <button
+              class="share-btn mr-2 p-1 hover:bg-gray-200 rounded"
+              data-section="YouTube"
+            >
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="currentColor"
+                stroke-width="2"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                class="w-5 h-5"
+              >
+                <path d="M4 12v8a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2v-8" />
+                <polyline points="16 6 12 2 8 6" />
+                <line x1="12" y1="2" x2="12" y2="15" />
+              </svg>
+            </button>
+            <svg
+              class="w-5 h-5 transform group-open:rotate-180"
+              fill="none"
+              stroke="currentColor"
+              viewBox="0 0 24 24"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                stroke-width="2"
+                d="M19 9l-7 7-7-7"
+              ></path>
+            </svg>
+          </div>
+        </summary>
+        <div class="py-4 pl-6">
+          <h3 class="text-lg font-semibold mb-2">The Bible Project</h3>
+          <p class="mb-4">
+            BibleProject is a nonprofit animation studio that produces
+            short-form, fully animated videos. Their videos and all of their
+            other resources are available for free to help people everywhere
+            experience the unified story of the Bible.
+          </p>
+          <ul class="list-disc pl-5 space-y-2 mb-6">
+            <li>
+              <a
+                target="_blank"
+                href="https://www.youtube.com/user/jointhebibleproject"
+                class="text-blue-600 hover:underline"
+                >The Bible Project YouTube Channel</a
+              >
+            </li>
+            <li>
+              <a
+                target="_blank"
+                href="https://bibleproject.com/"
+                class="text-blue-600 hover:underline"
+                >The Bible Project Website</a
+              >
+            </li>
+          </ul>
+
+          <h3 class="text-lg font-semibold mb-2">Desiring God</h3>
+          <p class="mb-4">
+            Desiring God's Mission: Most people in the world have no experience
+            of deep and abiding joy. Even though it is something we all
+            desperately long for, the assurance that true happiness can be known
+            — fully and forever — is a hope that billions of people live every
+            day without. This is a tragedy. Desiring God is on a mission to
+            change that.
+          </p>
+          <ul class="list-disc pl-5 space-y-2 mb-6">
+            <li>
+              <a
+                target="_blank"
+                href="https://www.youtube.com/user/desiringGod"
+                class="text-blue-600 hover:underline"
+                >Desiring God YouTube Channel</a
+              >
+            </li>
+            <li>
+              <a
+                target="_blank"
+                href="https://www.desiringgod.org/"
+                class="text-blue-600 hover:underline"
+                >Desiring God Website</a
+              >
+            </li>
+          </ul>
+
+          <h3 class="text-lg font-semibold mb-2">Honest Answers</h3>
+          <p class="mb-4">
+            A series where Southern Seminary professors honestly answer
+            questions directly submitted by viewers about theology, ministry,
+            and life.
+          </p>
+          <ul class="list-disc pl-5 space-y-2 mb-6">
+            <li>
+              <a
+                target="_blank"
+                href="https://www.youtube.com/playlist?list=PLBA1qC8OOEJBdivoQvS7wtiUgvF5jpkBe"
+                class="text-blue-600 hover:underline"
+                >Honest Answers Playlist</a
+              >
+            </li>
+            <li>
+              <a
+                target="_blank"
+                href="https://www.sbts.edu/"
+                class="text-blue-600 hover:underline"
+                >Southern Baptist Theological Seminary Website</a
+              >
+            </li>
+          </ul>
+
+          <h3 class="text-lg font-semibold mb-2">GotQuestions.org</h3>
+          <p class="mb-4">
+            GotQuestions.org is a ministry that provides biblical, applicable,
+            and timely answers to spiritually related questions through an
+            internet presence.
+          </p>
+          <ul class="list-disc pl-5 space-y-2 mb-6">
+            <li>
+              <a
+                target="_blank"
+                href="https://www.youtube.com/user/gotquestions"
+                class="text-blue-600 hover:underline"
+                >GotQuestions.org YouTube Channel</a
+              >
+            </li>
+            <li>
+              <a
+                target="_blank"
+                href="https://www.gotquestions.org/"
+                class="text-blue-600 hover:underline"
+                >GotQuestions.org Website</a
+              >
+            </li>
+          </ul>
+
+          <h3 class="text-lg font-semibold mb-2">Ligonier Ministries</h3>
+          <p class="mb-4">
+            Ligonier Ministries exists to proclaim, teach, and defend the
+            holiness of God in all its fullness to as many people as possible.
+            Their YouTube channel features teaching series, Q&As, and more from
+            R.C. Sproul and other trusted teachers.
+          </p>
+          <ul class="list-disc pl-5 space-y-2">
+            <li>
+              <a
+                target="_blank"
+                href="https://www.youtube.com/user/LigonierMinistries"
+                class="text-blue-600 hover:underline"
+                >Ligonier Ministries YouTube Channel</a
+              >
+            </li>
+            <li>
+              <a
+                target="_blank"
+                href="https://www.ligonier.org/"
+                class="text-blue-600 hover:underline"
+                >Ligonier Ministries Website</a
+              >
+            </li>
+          </ul>
+        </div>
+      </details>
+
+      <!-- Books -->
+      <details id="books" class="mb-4 border-b border-gray-200 group">
+        <summary
+          class="text-xl font-semibold py-4 cursor-pointer flex items-center justify-between hover:bg-gray-100 px-2 rounded"
+        >
+          <h2 id="Books" class="inline-flex items-center">
+            <span class="mr-2">📕</span>
+            <span>Books</span>
+          </h2>
+          <div class="flex items-center">
+            <button
+              class="share-btn mr-2 p-1 hover:bg-gray-200 rounded"
+              data-section="Books"
+            >
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="currentColor"
+                stroke-width="2"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                class="w-5 h-5"
+              >
+                <path d="M4 12v8a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2v-8" />
+                <polyline points="16 6 12 2 8 6" />
+                <line x1="12" y1="2" x2="12" y2="15" />
+              </svg>
+            </button>
+            <svg
+              class="w-5 h-5 transform group-open:rotate-180"
+              fill="none"
+              stroke="currentColor"
+              viewBox="0 0 24 24"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                stroke-width="2"
+                d="M19 9l-7 7-7-7"
+              ></path>
+            </svg>
+          </div>
+        </summary>
+        <div class="py-4 pl-6">
+          <div class="mb-6">
+            <h3 class="text-lg font-semibold mb-2">
+              R.C. Sproul's Crucial Questions series
+            </h3>
+            <p class="mb-2">
+              The Crucial Questions book series by R.C. Sproul includes books
+              Who Is Jesus?, Can I Trust the Bible?, Does Prayer Change Things?,
+              and several more. See the complete Crucial Questions series book
+              list in order, box sets or omnibus editions, and companion titles.
+            </p>
+            <p class="font-semibold">Link Options:</p>
+            <ul class="list-disc pl-5 space-y-1">
+              <li>
+                <a
+                  href="https://www.amazon.com/dp/B09Q61X1VS?binding=kindle_edition&ref=dbs_m_mng_rwt_sft_tkin_tpbk&qid=1698069293&sr=8-34"
+                  class="text-blue-600 hover:underline"
+                  target="_blank"
+                  >Amazon</a
+                >
+                (kindle versions are free!)
+              </li>
+              <li>
+                <a
+                  href="https://www.thriftbooks.com/series/crucial-questions-/52316/"
+                  class="text-blue-600 hover:underline"
+                  target="_blank"
+                  >Thriftbooks</a
+                >
+              </li>
+            </ul>
+          </div>
+
+          <div class="mb-6">
+            <h3 class="text-lg font-semibold mb-2">
+              Mere Christianity by C.S. Lewis
+            </h3>
+            <p class="mb-2">
+              In Mere Christianity, C. S. Lewis argues for the logical validity
+              of Christianity, defends the religion from its critics, and looks
+              in detail at what the life of a Christian is like.
+            </p>
+            <p class="font-semibold">Link Options:</p>
+            <ul class="list-disc pl-5 space-y-1">
+              <li>
+                <a
+                  href="https://www.amazon.com/Mere-Christianity-C-S-Lewis/dp/0060652926/ref=sr_1_1?crid=10242B3UN53QF&dchild=1&keywords=mere+christianity+by+c.s.+lewis&qid=1615816679&sprefix=mere+%2Caps%2C207&sr=8-1"
+                  class="text-blue-600 hover:underline"
+                  target="_blank"
+                  >Amazon</a
+                >
+              </li>
+              <li>
+                <a
+                  href="https://www.audible.com/pd/Mere-Christianity-Audiobook/B00JPK6A64?qid=1617712965&sr=1-1&ref=a_search_c3_lProduct_1_1&pf_rd_p=83218cca-c308-412f-bfcf-90198b687a2f&pf_rd_r=ZKGNDH4AY5AA3N7XW0Z3"
+                  class="text-blue-600 hover:underline"
+                  target="_blank"
+                  >Audible Link</a
+                >
+              </li>
+            </ul>
+          </div>
+
+          <div class="mb-6">
+            <h3 class="text-lg font-semibold mb-2">
+              Spiritual Disciplines for the Christian Life by Donald Whitney
+            </h3>
+            <p class="mb-2">
+              Spiritual Disciplines for the Christian Life will guide you
+              through a carefully selected array of disciplines including
+              Scripture reading, prayer, worship, Scripture meditation,
+              evangelism, serving, stewardship of time and money, Scripture
+              application, fasting, silence and solitude, journaling, and
+              learning. By illustrating why the disciplines are important,
+              showing how each one will help you grown in godliness, and
+              offering practical suggestions for cultivating them on a long-term
+              basis, Spiritual Disciplines for the Christian Life will provide
+              you with a refreshing opportunity to embrace life's greatest
+              pursuit----the pursuit of holiness-through a lifelong delight in
+              the disciplines.
+            </p>
+            <p class="font-semibold">Link Options:</p>
+            <ul class="list-disc pl-5 space-y-1">
+              <li>
+                <a
+                  href="https://www.amazon.com/Spiritual-Disciplines-Christian-Donald-Whitney/dp/1615216170/ref=sr_1_1?crid=1PXR78D1YGH95&dchild=1&keywords=spiritual+disciplines+for+the+christian+life&qid=1615816652&sprefix=spiritual+disciplines+%2Caps%2C212&sr=8-1"
+                  class="text-blue-600 hover:underline"
+                  target="_blank"
+                  >Amazon</a
+                >
+              </li>
+              <li>
+                <a
+                  href="https://www.audible.com/pd/Spiritual-Disciplines-for-the-Christian-Life-Audiobook/B002V5GNFS?qid=1617713156&sr=1-1&ref=a_search_c3_lProduct_1_1&pf_rd_p=83218cca-c308-412f-bfcf-90198b687a2f&pf_rd_r=C66BAM8PGA35MHMPB8NS"
+                  class="text-blue-600 hover:underline"
+                  target="_blank"
+                  >Audible Link</a
+                >
+              </li>
+            </ul>
+          </div>
+          <div class="mb-6">
+            <h3 class="text-lg font-semibold mb-2">
+              Invitations by Katie Laravia
+            </h3>
+            <p class="mb-2">
+              This is a book of invitations. A supply of spiritual activities,
+              exercises, prayers, and studies that can be used in any small
+              group, accountability, or discipleship group setting. They are
+              meant to spur on spiritual conversation, press people to dig a
+              little deeper into discovering what they really believe about God,
+              and how to respond to that in the way they live their lives.
+            </p>
+            <p class="font-semibold">Link Options:</p>
+            <ul class="list-disc pl-5 space-y-1">
+              <li>
+                <a
+                  href="https://drive.google.com/file/d/159jz4IsQxUR3fw1kA3e_a2ziGjtW6xNE/view"
+                  class="text-blue-600 hover:underline"
+                  target="_blank"
+                  >PDF</a
+                >
+              </li>
+            </ul>
+          </div>
+        </div>
+      </details>
+
+      <!-- Podcasts/Audio -->
+      <details id="podcasts-audio" class="mb-4 border-b border-gray-200 group">
+        <summary
+          class="text-xl font-semibold py-4 cursor-pointer flex items-center justify-between hover:bg-gray-100 px-2 rounded"
+        >
+          <h2 id="PodcastsAudio" class="inline-flex items-center">
+            <span class="mr-2">📣</span>
+            <span>Podcasts/Audio</span>
+          </h2>
+          <div class="flex items-center">
+            <button
+              class="share-btn mr-2 p-1 hover:bg-gray-200 rounded"
+              data-section="PodcastsAudio"
+            >
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="currentColor"
+                stroke-width="2"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                class="w-5 h-5"
+              >
+                <path d="M4 12v8a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2v-8" />
+                <polyline points="16 6 12 2 8 6" />
+                <line x1="12" y1="2" x2="12" y2="15" />
+              </svg>
+            </button>
+            <svg
+              class="w-5 h-5 transform group-open:rotate-180"
+              fill="none"
+              stroke="currentColor"
+              viewBox="0 0 24 24"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                stroke-width="2"
+                d="M19 9l-7 7-7-7"
+              ></path>
+            </svg>
+          </div>
+        </summary>
+        <div class="py-4 pl-6">
+          <div class="mb-6">
+            <h3 class="text-lg font-semibold mb-2">Ask Pastor John</h3>
+            <p class="mb-2">
+              "Daily audio clips of John Piper answering tough theological and
+              pastoral questions."
+            </p>
+            <p class="font-semibold">Link Options:</p>
+            <ul class="list-disc pl-5 space-y-1">
+              <li>
+                <a
+                  href="https://podcasts.apple.com/us/podcast/ask-pastor-john/id618132843"
+                  class="text-blue-600 hover:underline"
+                  target="_blank"
+                  >Apple Podcast App</a
+                >
+              </li>
+              <li>
+                <a
+                  href="https://open.spotify.com/show/5vPg9kNdtiKdsjAaox2jOC?si=V0JJWyVhS1Spk7o6BHrQEg"
+                  class="text-blue-600 hover:underline"
+                  target="_blank"
+                  >Spotify</a
+                >
+              </li>
+              <li>
+                <a
+                  href="https://www.youtube.com/c/desiringGod/videos"
+                  class="text-blue-600 hover:underline"
+                  target="_blank"
+                  >YouTube</a
+                >
+              </li>
+              <li>
+                <a
+                  href="https://podcasts.google.com/feed/aHR0cDovL2ZlZWQuZGVzaXJpbmdnb2Qub3JnL2Fzay1wYXN0b3Itam9obi5yc3M"
+                  class="text-blue-600 hover:underline"
+                  target="_blank"
+                  >Google Podcast</a
+                >
+              </li>
+            </ul>
+          </div>
+
+          <div class="mb-6">
+            <h3 class="text-lg font-semibold mb-2">The Bible Project</h3>
+            <p class="mb-2">
+              "The creators of BibleProject have in-depth conversations about
+              the Bible and theology. A companion podcast to BibleProject videos
+              found at
+              <a
+                href="http://bibleproject.com/"
+                class="text-blue-600 hover:underline"
+                target="_blank"
+                >bibleproject.com</a
+              >."
+            </p>
+            <p class="font-semibold">Link Options:</p>
+            <ul class="list-disc pl-5 space-y-1">
+              <li>
+                <a
+                  href="https://podcasts.apple.com/us/podcast/bibleproject/id1050832450"
+                  class="text-blue-600 hover:underline"
+                  target="_blank"
+                  >Apple Podcast App</a
+                >
+              </li>
+              <li>
+                <a
+                  href="https://open.spotify.com/show/6f2oD3RtQY1rOeyfF2OeOa?si=QWzppJajRGej1245oqWBzA"
+                  class="text-blue-600 hover:underline"
+                  target="_blank"
+                  >Spotify</a
+                >
+              </li>
+              <li>
+                <a
+                  href="https://podcasts.google.com/feed/aHR0cHM6Ly9mZWVkcy5zaW1wbGVjYXN0LmNvbS8zTlZtVVdaTw"
+                  class="text-blue-600 hover:underline"
+                  target="_blank"
+                  >Google Podcast</a
+                >
+              </li>
+            </ul>
+          </div>
+
+          <div class="mb-6">
+            <h3 class="text-lg font-semibold mb-2">
+              Renewing Your Mind with R.C. Sproul
+            </h3>
+            <p class="mb-2">
+              "God calls His people to be transformed by the renewing of their
+              minds. This transformation of thinking God's thoughts after Him is
+              a daily pursuit. To aid you in this,
+              <i>Renewing Your Mind</i> broadcasts a daily message and related
+              resource offer that exposits the glories of God revealed in the
+              Bible against the backdrop of culture, philosophy, apologetics,
+              ethics, and church history. Think of it as bridging the gap
+              between Sunday school and seminary---equipping you for the
+              Christian life."
+            </p>
+            <p class="font-semibold">Link Options:</p>
+            <ul class="list-disc pl-5 space-y-1">
+              <li>
+                <a
+                  href="https://open.spotify.com/show/1Nz5qhkuLv2I1Dd9fXJDQ3?si=4e3a57978fd5445e"
+                  class="text-blue-600 hover:underline"
+                  target="_blank"
+                  >Spotify</a
+                >
+              </li>
+              <li>
+                <a
+                  href="https://podcasts.apple.com/us/podcast/renewing-your-mind-with-r-c-sproul/id110916650?mt=2"
+                  class="text-blue-600 hover:underline"
+                  target="_blank"
+                  >Apple Podcast</a
+                >
+              </li>
+              <li>
+                <a
+                  href="https://renewingyourmind.org/"
+                  class="text-blue-600 hover:underline"
+                  target="_blank"
+                  >Website</a
+                >
+              </li>
+            </ul>
+          </div>
+
+          <div class="mb-6">
+            <h3 class="text-lg font-semibold mb-2">
+              Timothy Keller Sermons Podcast
+            </h3>
+            <p class="mb-2">
+              "Sermons by Tim Keller, founder of Redeemer Presbyterian Church in
+              NYC and NY Times best-selling author of "The Reason for God:
+              Belief in an Age of Skepticism.""
+            </p>
+            <p class="font-semibold">Link Options:</p>
+            <ul class="list-disc pl-5 space-y-1">
+              <li>
+                <a
+                  href="https://open.spotify.com/show/5hYDVSeY9KWSpkI4YlSzKF?si=f39427eff9a64c8f"
+                  class="text-blue-600 hover:underline"
+                  target="_blank"
+                  >Spotify</a
+                >
+              </li>
+              <li>
+                <a
+                  href="https://podcasts.apple.com/us/podcast/timothy-keller-sermons-podcast-by-gospel-in-life/id352660924"
+                  class="text-blue-600 hover:underline"
+                  target="_blank"
+                  >Apple Podcast</a
+                >
+              </li>
+              <li>
+                <a
+                  href="https://podcast.gospelinlife.com/?utm_source=google&utm_medium=ad&utm_campaign=ongoing&utm_content=podcast&gclid=CjwKCAjws9ipBhB1EiwAccEi1HmeAfgiffcXlpek03YpmpcZ-Yi5fdigSzwAQfuE-kd2NTgvZZFlPhoCRywQAvD_BwE"
+                  class="text-blue-600 hover:underline"
+                  target="_blank"
+                  >Website</a
+                >
+              </li>
+            </ul>
+          </div>
+
+          <div class="mb-6">
+            <h3 class="text-lg font-semibold mb-2">
+              5 Minutes in Church History
+            </h3>
+            <p class="mb-2">
+              "This weekly podcast provides an informal and informative look at
+              church history. Join us each week as we take a brief break from
+              the present to go exploring the past. Travel back in time as we
+              look at the people, events, and even the places that have shaped
+              the story of Christianity. Each episode offers an easily
+              digestible glimpse of how the eternal, unchangeable God has worked
+              in the church over prior generations and how this can encourage us
+              today. This is our story---our family history."
+            </p>
+            <p class="font-semibold">Link Options:</p>
+            <ul class="list-disc pl-5 space-y-1">
+              <li>
+                <a
+                  href="https://itunes.apple.com/us/podcast/5-minutes-in-church-history-with-stephen-nichols/id684370851?mt=2"
+                  class="text-blue-600 hover:underline"
+                  target="_blank"
+                  >Apple Podcast App</a
+                >
+              </li>
+              <li>
+                <a
+                  href="https://open.spotify.com/show/0tNCkRF4SSyl7HdyxjLfkM?si=FPSNAKNfTu6V6UkzNVrwnw"
+                  class="text-blue-600 hover:underline"
+                  target="_blank"
+                  >Spotify</a
+                >
+              </li>
+              <li>
+                <a
+                  href="https://podcasts.google.com/feed/aHR0cHM6Ly81bWludXRlc2luY2h1cmNoaGlzdG9yeS5saWdvbmllci5vcmcvcnNz"
+                  class="text-blue-600 hover:underline"
+                  target="_blank"
+                  >Google Podcast</a
+                >
+              </li>
+            </ul>
+          </div>
+
+          <div class="mb-6">
+            <h3 class="text-lg font-semibold mb-2">
+              Craig Groeschel Leadership
+            </h3>
+            <p class="mb-2">
+              "The Craig Groeschel Leadership Podcast offers personal, practical
+              coaching lessons that take the mystery out of leadership. In each
+              episode of the Craig Groeschel Leadership Podcast, Craig brings
+              you empowering insights and easy-to-understand takeaways you can
+              use to lead yourself and lead your team. You'll learn effective
+              ways to grow as a leader, optimize your time, develop your team,
+              and structure your organization."
+            </p>
+            <p class="font-semibold">Link Options:</p>
+            <ul class="list-disc pl-5 space-y-1">
+              <li>
+                <a
+                  href="https://podcasts.apple.com/us/podcast/craig-groeschel-leadership-podcast/id1070649025?mt=2"
+                  class="text-blue-600 hover:underline"
+                  target="_blank"
+                  >Apple Podcast App</a
+                >
+              </li>
+              <li>
+                <a
+                  href="https://open.spotify.com/show/7tznexFwtbxfPOYF5mxkxI"
+                  class="text-blue-600 hover:underline"
+                  target="_blank"
+                  >Spotify</a
+                >
+              </li>
+              <li>
+                <a
+                  href="https://podcasts.google.com/feed/aHR0cHM6Ly9mZWVkcy5zaW1wbGVjYXN0LmNvbS9hdGd0aWhkMA"
+                  class="text-blue-600 hover:underline"
+                  target="_blank"
+                  >Google Podcast</a
+                >
+              </li>
+              <li>
+                <a
+                  href="https://www.life.church/leadershippodcast/"
+                  class="text-blue-600 hover:underline"
+                  target="_blank"
+                  >Website (useful resources)</a
+                >
+              </li>
+            </ul>
+          </div>
+        </div>
+      </details>
+
+      <!-- Apps & Tools -->
+      <details id="apps-tools" class="mb-4 border-b border-gray-200 group">
+        <summary
+          class="text-xl font-semibold py-4 cursor-pointer flex items-center justify-between hover:bg-gray-100 px-2 rounded"
+        >
+          <h2 id="AppsTools" class="inline-flex items-center">
+            <span class="mr-2">🛠️</span>
+            <span>Apps & Tools</span>
+          </h2>
+          <div class="flex items-center">
+            <button
+              class="share-btn mr-2 p-1 hover:bg-gray-200 rounded"
+              data-section="AppsTools"
+            >
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="currentColor"
+                stroke-width="2"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                class="w-5 h-5"
+              >
+                <path d="M4 12v8a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2v-8" />
+                <polyline points="16 6 12 2 8 6" />
+                <line x1="12" y1="2" x2="12" y2="15" />
+              </svg>
+            </button>
+            <svg
+              class="w-5 h-5 transform group-open:rotate-180"
+              fill="none"
+              stroke="currentColor"
+              viewBox="0 0 24 24"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                stroke-width="2"
+                d="M19 9l-7 7-7-7"
+              ></path>
+            </svg>
+          </div>
+        </summary>
+        <div class="py-4 pl-6">
+          <p>
+            <a
+              href="https://www.youversion.com/the-bible-app/"
+              class="text-blue-600 hover:underline"
+              target="_blank"
+              >Bible App</a
+            >
+            (iOS & Android)
+          </p>
+
+          <p>
+            <a
+              href="https://bibleproject.com/app/"
+              class="text-blue-600 hover:underline"
+              target="_blank"
+              >Bible Project</a
+            >
+            (iOS & Android)
+          </p>
+
+          <p>
+            <a
+              href="https://www.ligonier.org/posts/download-the-free-ligonier-app"
+              class="text-blue-600 hover:underline"
+              target="_blank"
+              >Ligonier Ministries</a
+            >
+            (iOS & Android)
+          </p>
+
+          <p>
+            <a
+              href="https://www.logos.com/get-started"
+              class="text-blue-600 hover:underline"
+              target="_blank"
+              >Logos</a
+            >
+            (iOS & Android)
+          </p>
+
+          <p>
+            <a
+              href="https://apps.apple.com/us/app/solid-joys-daily-devotional/id553049864"
+              class="text-blue-600 hover:underline"
+              target="_blank"
+              >Solid Joys</a
+            >
+            (iOS)
+          </p>
+
+          <p>Blue Letter Bible</p>
+          <div class="pl-4">
+            <p>
+              <a
+                href="https://apps.apple.com/us/app/blue-letter-bible/id365547505"
+                class="text-blue-600 hover:underline"
+                target="_blank"
+                >iOS</a
+              >
+            </p>
+          </div>
+
+          <p>He Reads Truth</p>
+          <div class="pl-4">
+            <p>
+              <a
+                href="https://apps.apple.com/us/app/he-reads-truth/id1009532934"
+                class="text-blue-600 hover:underline"
+                target="_blank"
+                >iOS</a
+              >
+            </p>
+            <p>
+              <a
+                href="https://play.google.com/store/apps/details?id=com.shereadstruth.hereadstruth&hl=en_US&gl=US"
+                class="text-blue-600 hover:underline"
+                target="_blank"
+                >Google Play Store</a
+              >
+            </p>
+          </div>
+
+          <p>Fighter Verses</p>
+          <div class="pl-4">
+            <p>
+              <a
+                href="https://apps.apple.com/us/app/fighter-verses/id411711646"
+                class="text-blue-600 hover:underline"
+                target="_blank"
+                >iOS</a
+              >
+            </p>
+            <p>
+              <a
+                href="https://play.google.com/store/apps/details?id=com.fighterverses.android"
+                class="text-blue-600 hover:underline"
+                target="_blank"
+                >Google Play Store</a
+              >
+            </p>
+          </div>
+
+          <p>Biblical Training</p>
+          <div class="pl-4">
+            <p>
+              <a
+                href="https://apps.apple.com/us/app/biblicaltraining/id6443987959"
+                class="text-blue-600 hover:underline"
+                target="_blank"
+                >iOS</a
+              >
+            </p>
+            <p>
+              <a
+                href="https://play.google.com/store/apps/details?id=com.biblicaltraining.flutter&hl=en_US"
+                class="text-blue-600 hover:underline"
+                target="_blank"
+                >Android</a
+              >
+            </p>
+          </div>
+        </div>
+      </details>
+    </div>
+
+    <!-- Tooltip -->
+    <div
+      id="tooltip"
+      class="tooltip fixed bg-gray-700 text-white px-2 py-1 rounded text-xs"
+    >
+      Link copied!
+    </div>
+
+    <!-- Fixed Feedback Button -->
+    <a
+      href="mailto:email@twadd.dev"
+      class="fixed bottom-4 left-4 bg-emerald-600 hover:bg-emerald-700 text-white text-xs md:text-md font-bold py-2 px-4 rounded shadow-lg transition-colors duration-200"
+    >
+      Feedback? Email Me!
+    </a>
+
+    <!-- Footer -->
+    <footer class="text-center text-sm mt-6 text-gray-500">
+      Made with ♥︎ by
+      <a
+        href="https://twadd.dev"
+        class="text-slate-800 hover:underline hover:text-blue-600"
+        >twadd</a
+      >.
+    </footer>
+
+    <script>
+      document.addEventListener("DOMContentLoaded", function () {
+        const welcomeBanner = document.getElementById("welcome-banner");
+        const closeBanner = document.getElementById("close-banner");
+        const tooltip = document.getElementById("tooltip");
+
+        // Banner logic
+        if (localStorage.getItem("welcomeBannerClosed") !== "true") {
+          welcomeBanner.style.display = "flex";
+        } else {
+          welcomeBanner.style.display = "none";
+        }
+
+        closeBanner.addEventListener("click", function () {
+          welcomeBanner.style.display = "none";
+          localStorage.setItem("welcomeBannerClosed", "true");
+        });
+
+        // Section opening logic
+        function openSection(sectionId) {
+          const normalizedId = sectionId.replace(/\s+/g, "").toLowerCase();
+          const section = Array.from(document.querySelectorAll("details")).find(
+            (el) =>
+              el.id.replace(/\s+/g, "").toLowerCase() === normalizedId ||
+              el.querySelector("h2").id.replace(/\s+/g, "").toLowerCase() ===
+                normalizedId
+          );
+          if (section) {
+            section.open = true;
+            section.scrollIntoView({ behavior: "smooth" });
+            return true;
+          }
+          return false;
+        }
+
+        function checkHash() {
+          if (window.location.hash) {
+            const sectionId = decodeURIComponent(
+              window.location.hash.substring(1)
+            );
+            if (!openSection(sectionId)) {
+              history.replaceState(null, null, " ");
+            }
+          }
+        }
+
+        checkHash();
+        window.addEventListener("hashchange", checkHash);
+
+        // Share button logic
+        document.querySelectorAll(".share-btn").forEach((btn) => {
+          btn.addEventListener("click", function (e) {
+            e.preventDefault();
+            e.stopPropagation();
+            const sectionId = this.getAttribute("data-section");
+            const url = `${window.location.origin}${window.location.pathname}#${sectionId}`;
+            navigator.clipboard.writeText(url).then(() => {
+              showTooltip(e);
+            });
+          });
+        });
+
+        function showTooltip(e) {
+          const button = e.target;
+          const buttonRect = button.getBoundingClientRect();
+          const tooltipRect = tooltip.getBoundingClientRect();
+
+          const centerX = buttonRect.left + buttonRect.width / 2;
+          const topY = buttonRect.top;
+
+          const tooltipX = centerX - tooltipRect.width / 2;
+          const tooltipY = topY - tooltipRect.height - 10; // 5px above the button
+
+          tooltip.style.left = `${tooltipX}px`;
+          tooltip.style.top = `${tooltipY}px`;
+
+          tooltip.classList.add("show");
+          setTimeout(() => {
+            tooltip.classList.remove("show");
+          }, 2000);
+        }
+      });
+    </script>
+  </body>
+</html>
